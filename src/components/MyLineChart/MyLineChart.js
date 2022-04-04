@@ -15,7 +15,7 @@ const MyLineChart = () => {
         <Tooltip />
       </LineChart>
       <p className="lg:text-2xl text-center text-gray-600 font-semibold">
-        Revenue vs Month BarChart
+        Revenue vs Month LineChart
       </p>
     </div>
   );

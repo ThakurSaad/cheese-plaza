@@ -7,7 +7,7 @@ const Review = ({ review }) => {
       <h4 className="text-3xl text-blue-700 mb-2">{name}</h4>
       <p className="text-slate-800 mb-2">{comment}</p>
       <p className="text-slate-800 font-semibold absolute bottom-1">
-        Rating : {rating}
+        Rating : {rating}/5 star 
       </p>
     </div>
   );
