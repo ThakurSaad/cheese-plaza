@@ -2,7 +2,6 @@ import { useNavigate } from "react-router-dom";
 import useReviews from "../../hooks/useReviews";
 import banner from "../../images/cheese.jpg";
 import Review from "../Review/Review";
-import Reviews from "../Reviews/Reviews";
 
 const Home = () => {
   // custom hook
