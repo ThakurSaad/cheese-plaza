@@ -1,0 +1,72 @@
+[
+    {
+        "id": 1,
+        "name": "John",
+        "review": "The menus options are an excellent value. The dining experience overall is very pleasant. I highly recommend this restaurant.",
+        "rating": "4",
+        "userImage": ""
+    },
+    {
+        "id": 2,
+        "name": "David",
+        "review": "Absolutely amazing place to eat, we will be making a reservation for our next visit in (CN)! 10 of 10 for every single aspect of this meal, and this is coming from people who know and love great food!",
+        "rating": "4",
+        "userImage": ""
+    },
+    {
+        "id": 3,
+        "name": "Alex",
+        "review": " Delicious high quality plates, selection of wines and great service. We tried all their entrees, one of their desserts, and everything was de-li-cious. Highly recommended",
+        "rating": "4",
+        "userImage": ""
+    },
+    {
+        "id": 4,
+        "name": "Khan",
+        "review": " Delicious high quality plates, selection of wines and great service. We tried all their entrees, one of their desserts, and everything was de-li-cious. Highly recommended",
+        "rating": "4",
+        "userImage": ""
+    },
+    {
+        "id": 5,
+        "name": "Dave",
+        "review": "Amaazing food! The whole experience from start to finish is great waitress is always so friendly and kind. The food can’t get better and the prices are fair for the portion size. Always a great spot to get great food",
+        "rating": "4",
+        "userImage": ""
+    },
+    {
+        "id": 6,
+        "name": "Parker",
+        "review": "Loved this place. The atmosphere, food and most of the drinks were great. The bartenders knew their mixology and it showed in the drinks. Great place to hangout, chill or go out on a date.",
+        "rating": "4",
+        "userImage": ""
+    },
+    {
+        "id": 7,
+        "name": "Json",
+        "review": "This spot gives extraordinary service and yummy meals. One of my favourite restaurants around town. The meals served rapidly and the rates were reasonable. Highly recommended.",
+        "rating": "4",
+        "userImage": ""
+    },
+    {
+        "id": 8,
+        "name": "Maxwell",
+        "review": " A small local restaurant with great service, food, and overall experience! Definitely a go-to place for (FN) when you are in (CN)! Huge variety of (FN) to choose from & side dishes are delicious as well.",
+        "rating": "4",
+        "userImage": ""
+    },
+    {
+        "id": 9,
+        "name": "Milton",
+        "review": "We are so fortunate to have this place just a few minutes drive away from home. Food is stunning, both the tapas and downstairs restaurant. Cocktails wow, wine great and lovely selection of beers. Love this place and will continue to visit.",
+        "rating": "4",
+        "userImage": ""
+    },
+    {
+        "id": 10,
+        "name": "Bob",
+        "review": " I have to say, I enjoyed every single bite of the meal in (RN). I had a 3 course meal, with a couple of beers. Considering the quality, the price is reasonable. Ideal for those who want a romantic night out. There was also plenty of room for bigger groups.",
+        "rating": "4",
+        "userImage": ""
+    }
+]
