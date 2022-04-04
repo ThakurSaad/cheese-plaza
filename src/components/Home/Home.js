@@ -8,9 +8,11 @@ const Home = () => {
   const slicedReviews = reviews.slice(0, 3);
   console.log(slicedReviews);
 
+  
+
   return (
-    <div>
-      <div className="flex items-center w-full mt-20">
+    <main>
+      <header className="flex items-center w-full mt-20">
         <section className="box-border">
           <h1 className="text-6xl text-amber-400 font-bold">
             WELCOME TO <br />{" "}
@@ -27,18 +29,25 @@ const Home = () => {
         <section className="w-5/6">
           <img className="w-fit rounded-lg" src={banner} alt="cheese" />
         </section>
-      </div>
+      </header>
       <hr className="my-14 border-t-2" />
       <h2 className="text-5xl text-amber-400 font-bold text-center mt-0 mb-8">
         Customer Review
       </h2>
-      <section className="grid md:grid-cols-2 lg:grid-cols-3 gap-4 box-border">
-        {slicedReviews.map((review) => (
-          <Reviews key={review.id} review={review}></Reviews>
-        ))}
+      <section>
+        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-4 box-border">
+          {slicedReviews.map((review) => (
+            <Reviews key={review.id} review={review}></Reviews>
+          ))}
+        </div>
+        <div className="text-center mt-4">
+          <button className="bg-amber-200 hover:bg-amber-300 duration-150 rounded text-blue-700 font-bold mt-4 p-3">
+            See All Reviews
+          </button>
+        </div>
       </section>
-      <hr className="my-14 border-t-2" />
-    </div>
+      <div className="my-14"></div>
+    </main>
   );
 };
 
