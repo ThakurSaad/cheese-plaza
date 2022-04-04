@@ -7,7 +7,7 @@ import Reviews from "../Reviews/Reviews";
 const Home = () => {
   // custom hook
   const [reviews, setReviews] = useReviews();
-  const slicedReviews = reviews.slice(0, 6);
+  const slicedReviews = reviews.slice(0, 3);
   console.log(slicedReviews);
 
   // handle see all review
