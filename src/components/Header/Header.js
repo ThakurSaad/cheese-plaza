@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 
 const Header = () => {
   return (
-    <div className="bg-blue-900 text-white text-center py-3">
+    <div className="lg:flex lg:justify-center grid sm:grid-cols-1 bg-blue-900 text-white text-center py-5">
       <Link className="mr-10 hover:text-amber-300 duration-150" to="/">Home</Link>
       <Link className="mr-10 hover:text-amber-300 duration-150" to="/reviews">Reviews</Link>
       <Link className="mr-10 hover:text-amber-300 duration-150" to="/dashboard">Dashboard</Link>
