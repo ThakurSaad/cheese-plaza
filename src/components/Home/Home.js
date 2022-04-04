@@ -1,16 +1,18 @@
 import useReviews from "../../hooks/useReviews";
 import banner from "../../images/cheese.jpg";
+import Reviews from "../Reviews/Reviews";
 
 const Home = () => {
   // custom hook
   const [reviews, setReviews] = useReviews();
-  console.log(reviews);
+  const slicedReviews = reviews.slice(0, 3);
+  console.log(slicedReviews);
 
   return (
     <div>
       <div className="flex items-center w-full mt-20">
         <section className="box-border">
-          <h1 className="text-6xl text-slate-600 font-bold">
+          <h1 className="text-6xl text-amber-400 font-bold">
             WELCOME TO <br />{" "}
             <span className="text-blue-700">CHEESE PLAZA</span>
           </h1>
@@ -26,6 +28,16 @@ const Home = () => {
           <img className="w-fit rounded-lg" src={banner} alt="cheese" />
         </section>
       </div>
+      <hr className="my-14 border-t-2" />
+      <h2 className="text-5xl text-amber-400 font-bold text-center mt-0 mb-8">
+        Customer Review
+      </h2>
+      <section className="grid md:grid-cols-2 lg:grid-cols-3 gap-4 box-border">
+        {slicedReviews.map((review) => (
+          <Reviews key={review.id} review={review}></Reviews>
+        ))}
+      </section>
+      <hr className="my-14 border-t-2" />
     </div>
   );
 };
