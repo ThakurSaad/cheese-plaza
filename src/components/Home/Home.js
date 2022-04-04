@@ -1,14 +1,20 @@
+import { useNavigate } from "react-router-dom";
 import useReviews from "../../hooks/useReviews";
 import banner from "../../images/cheese.jpg";
+import Review from "../Review/Review";
 import Reviews from "../Reviews/Reviews";
 
 const Home = () => {
   // custom hook
   const [reviews, setReviews] = useReviews();
-  const slicedReviews = reviews.slice(0, 3);
+  const slicedReviews = reviews.slice(0, 6);
   console.log(slicedReviews);
 
-  
+  // handle see all review
+  let navigate = useNavigate();
+  const seeAllReview = () => {
+    navigate(`/reviews`);
+  };
 
   return (
     <main>
@@ -37,11 +43,14 @@ const Home = () => {
       <section>
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-4 box-border">
           {slicedReviews.map((review) => (
-            <Reviews key={review.id} review={review}></Reviews>
+            <Review key={review.id} review={review}></Review>
           ))}
         </div>
         <div className="text-center mt-4">
-          <button className="bg-amber-200 hover:bg-amber-300 duration-150 rounded text-blue-700 font-bold mt-4 p-3">
+          <button
+            onClick={seeAllReview}
+            className="bg-amber-200 hover:bg-amber-300 duration-150 rounded text-blue-700 font-bold mt-4 p-3"
+          >
             See All Reviews
           </button>
         </div>

@@ -1,14 +1,15 @@
 import React from "react";
+import useReviews from "../../hooks/useReviews";
+import Review from "../Review/Review";
 
-const Reviews = ({ review }) => {
-  const { name, comment, rating } = review || {};
+const Reviews = () => {
+  const [reviews, setReviews] = useReviews();
+
   return (
-    <div className="w-full h-52 rounded-lg bg-slate-50 p-2 relative">
-      <h4 className="text-3xl text-blue-700 mb-2">{name}</h4>
-      <p className="text-slate-800 font-semibold mb-2">{comment}</p>
-      <p className="text-slate-800 font-semibold absolute bottom-1">
-        Rating : {rating}
-      </p>
+    <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-4 box-border">
+      {reviews.map((review) => (
+        <Review key={review.id} review={review}></Review>
+      ))}
     </div>
   );
 };
