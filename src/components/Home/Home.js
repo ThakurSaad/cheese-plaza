@@ -17,7 +17,7 @@ const Home = () => {
 
   return (
     <main>
-      <header className="grid lg:grid-cols-2 justify-items-center w-full mt-20">
+      <header className="grid lg:grid-cols-2 items-center w-full mt-20">
         <section className="box-border">
           <h1 className="text-6xl text-amber-400 font-bold">
             WELCOME TO <br />{" "}
